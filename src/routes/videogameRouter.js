@@ -1,5 +1,5 @@
 const { Router } = require("express");
-// const { Videogame, Genre } = require('../db.js');
+const { Videogame } = require("../db.js");
 const {
   getVideogamesById,
 } = require("../controllers/videogames/get.videogames");
