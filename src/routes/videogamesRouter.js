@@ -8,9 +8,9 @@ router.get("/", async (req, res) => {
   const { name, genre } = req.query;
   let url;
   if (genre) {
-    url = `https://api.rawg.io/api/games?genres=${genre}&key=${API_KEY}`;
+    url = `https://api.rawg.io/api/games?genres=${genre}&key=57215a81e7e441c2957e294103f08214`;
   } else {
-    url = `https://api.rawg.io/api/games?page=1&page_size=60&key=${API_KEY}`;
+    url = `https://api.rawg.io/api/games?page=1&page_size=60&key=57215a81e7e441c2957e294103f08214`;
   }
   try {
     const videogames = await getListGames(url);

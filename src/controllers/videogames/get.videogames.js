@@ -64,7 +64,7 @@ const getVideogamesById = async (id) => {
     return found;
   } else {
     let gamesById = await axios.get(
-      `https://api.rawg.io/api/games/${id}?key=${API_KEY}`,
+      `https://api.rawg.io/api/games/${id}?key=57215a81e7e441c2957e294103f08214`,
       {
         headers: { "Accept-Encoding": "gzip,deflate,compress" },
       }
@@ -99,7 +99,7 @@ const getVideogamesById = async (id) => {
 
 const getGenres = async () => {
   const genres = await axios.get(
-    `https://api.rawg.io/api/genres?key=${API_KEY}`,
+    `https://api.rawg.io/api/genres?key=57215a81e7e441c2957e294103f08214`,
     {
       headers: { "Accept-Encoding": "gzip,deflate,compress" },
     }
